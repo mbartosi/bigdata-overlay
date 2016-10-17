@@ -13,7 +13,7 @@ PIDFILE=$PIDDIR/cassandra.pid
 
 start() {
     ebegin "Starting Apache Cassandra"
-    start-stop-daemon --start --quiet --user cassandra --pidfile $PIDFILE --exec /opt/cassandra-3.0.0/bin/cassandra -- -p $PIDFILE
+    start-stop-daemon --start --quiet --user cassandra --pidfile $PIDFILE --exec /opt/cassandra-3.9/bin/cassandra -- -p $PIDFILE
     eend $?
 }
 
