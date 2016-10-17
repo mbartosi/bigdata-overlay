@@ -1,5 +1,5 @@
 # bigdata-overlay
-Big Data Gentoo overlay
+Big Data Gentoo overlay.
 
 # Installation using Portage modular sync system:
 
