@@ -9,7 +9,8 @@ MY_PN="hbase"
 
 DESCRIPTION="HBase is the Hadoop database."
 HOMEPAGE="http://hadoop.apache.org/"
-SRC_URI="mirror://apache/${MY_PN}/${MY_PN}-${PV}/${MY_PN}-${PV}-bin.tar.gz"
+#SRC_URI="mirror://apache/${MY_PN}/${MY_PN}-${PV}/${MY_PN}-${PV}-bin.tar.gz"
+SRC_URI="mirror://apache/${MY_PN}/${PV}/${MY_PN}-${PV}-bin.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
