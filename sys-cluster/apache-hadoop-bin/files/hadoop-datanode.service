@@ -6,6 +6,7 @@ After=network.target
 #EnvironmentFile=/etc/conf.d/hadoop
 Type=forking
 RuntimeDirectory=pids
+RuntimeDirectoryMode=0775
 PIDFile=/var/run/pids/hadoop-hdfs-datanode.pid
 ExecStart=/opt/hadoop/sbin/hadoop-daemon.sh --config /etc/hadoop start datanode
 User=hdfs
