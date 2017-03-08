@@ -225,4 +225,5 @@ EOF
 	
 	# systemd
 	systemd_dounit "${FILESDIR}"/hadoop-namenode.service
+	systemd_dounit "${FILESDIR}"/hadoop-datanode.service
 }
