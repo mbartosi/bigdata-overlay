@@ -3,7 +3,7 @@
 # $Id$
 
 EAPI="5"
-inherit user
+inherit user systemd
 
 MY_PN="hadoop"
 MY_P="${MY_PN}-${PV}"
@@ -222,4 +222,7 @@ EOF
 	done
 	# opt synlink
 	dosym "${INSTALL_DIR}" "/opt/${MY_PN}"
+	
+	# systemd
+	systemd_dounit "${FILESDIR}"/hadoop-namenode.service
 }
