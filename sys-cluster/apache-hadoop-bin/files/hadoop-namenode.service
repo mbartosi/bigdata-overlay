@@ -1,0 +1,15 @@
+[Unit]
+Description=Hadoop Namenode
+After=network.target
+
+[Service]
+#EnvironmentFile=/etc/conf.d/hadoop
+Type=forking
+RuntimeDirectory=pids
+PIDFile=/var/run/pids/hadoop-hdfs-namenode.pid
+ExecStart=/opt/hadoop/sbin/hadoop-daemon.sh --config /etc/hadoop start namenode
+User=hdfs
+Group=hadoop
+
+[Install]
+WantedBy=multi-user.target
