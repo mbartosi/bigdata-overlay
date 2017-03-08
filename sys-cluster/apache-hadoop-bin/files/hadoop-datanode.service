@@ -1,5 +1,5 @@
 [Unit]
-Description=Hadoop Namenode
+Description=Hadoop Datanode
 After=network.target
 
 [Service]
