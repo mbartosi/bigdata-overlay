@@ -1,0 +1,18 @@
+[Unit]
+Description=Spark Worker
+After=network.target
+
+
+[Service]
+#EnvironmentFile=/etc/conf.d/hadoop
+Type=forking
+RuntimeDirectory=pids
+RuntimeDirectoryMode=0775
+PIDFile=/var/run/pids/spark-spark-org.apache.spark.deploy.worker.Worker-1.pid
+ExecStart=/opt/spark/sbin/start-slave.sh
+ExecStop=/opt/spark/sbin/stop-slave.sh
+User=spark
+Group=hadoop
+
+[Install]
+WantedBy=multi-user.target

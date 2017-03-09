@@ -71,4 +71,8 @@ EOF
 		dosym  /etc/init.d/"${MY_PN}.init" /etc/init.d/"${MY_PN}-master"
 	fi
 	dosym "${INSTALL_DIR}" "/opt/${MY_PN}"
+	
+        # systemd
+        systemd_dounit "${FILESDIR}"/spark-master.service
+        systemd_dounit "${FILESDIR}"/spark-worker.service
 }
