@@ -27,4 +27,4 @@ Total: 1 package (1 new), Size of downloads: 209075 KiB
 
 # Work In Progress:
 
-Systemd support: initial service definition for Spark and Hadoop (notice: very crude work).
+Systemd support: initial service definitions for Spark and Hadoop (notice: very crude work).
