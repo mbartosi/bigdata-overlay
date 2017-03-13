@@ -25,6 +25,6 @@ Calculating dependencies... done!
 Total: 1 package (1 new), Size of downloads: 209075 KiB
 ```
 
-# ToDo
+# Work In Progress:
 
-Add `systemd` USE flag and relevant service definitions.
+Systemd support: initial service definition for Spark and Hadoop (notice: very crude work).
