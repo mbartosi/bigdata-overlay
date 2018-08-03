@@ -5,7 +5,7 @@
 EAPI="5"
 
 MY_PN="sqoop"
-MY_PN_SUFFIX=".bin__hadoop-2.0.4-alpha"
+MY_PN_SUFFIX=".bin__hadoop-2.6.0"
 
 DESCRIPTION="Tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases"
 HOMEPAGE="http://sqoop.apache.org/"
